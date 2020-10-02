@@ -19,8 +19,8 @@ class Waterjug:
         print ('(', self.a, ',', self.b, ')')
     def transferAtoB(self):
         while (True):
-            self.a = self.a - 1            
-            self.b = self.b + 1
+            self.a = self.a - self.b            
+            self.b = self.b + self.a
             if (self.a == 0 or self.b == self.b_max):
                 break
         print ('(', self.a, ',', self.b, ')')
